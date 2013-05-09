@@ -98,7 +98,7 @@
 			<key>type</key>
 			<string>color</string>
 			<key>default</key>
-			<string>#ffffcc</string>
+			<string>#fff</string>
 			<key>style</key>
 			<string>/* Your messages background */ .message--outgoing { background-color: %@; }</string>
 		</dict>

@@ -229,19 +229,7 @@
 	<xsl:template match="a" mode="copy">
 		<xsl:variable name="extension" select="substring(@href,string-length(@href) - 3, 4)" />
 		<xsl:variable name="extensionLong" select="substring(@href,string-length(@href) - 4, 5)" />
-		<xsl:choose>
-			<xsl:when test="$extension = '.jpg' or $extension = '.JPG' or $extensionLong = '.jpeg' or $extensionLong = '.JPEG'
-											or $extension = '.gif' or $extension = '.GIF'
-											or $extension = '.png' or $extension = '.PNG'
-											or $extension = '.tif' or $extension = '.TIF' or $extensionLong = '.tiff' or $extensionLong = '.TIFF'
-											or $extension = '.bmp' or $extension = '.BMP'
-			">
-				<a href="{@href}" title="{@href}" class="image"><img src="{@href}" alt="Loading Image…" onload="scrollToBottom()" onerror="scrollToBottom()" class="image__img" /><span class="image__url"><xsl:value-of select="@href" /></span></a>
-			</xsl:when>
-			<xsl:otherwise>
-				<xsl:copy-of select="current()" />
-			</xsl:otherwise>
-		</xsl:choose>
+		<xsl:copy-of select="current()" />
 	</xsl:template>
 
 	<xsl:template match="span[contains(@class,'member')]" mode="event">

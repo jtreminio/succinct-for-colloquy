@@ -39,11 +39,11 @@ $lucida                     : "Lucida Grande", "Lucida Sans Unicode", "Lucida Sa
 
 // For an explanation of why "sans-serif" is at the end of this list, see
 // http://meyerweb.com/eric/thoughts/2010/02/12/fixed-monospace-sizing/
-$courier                    : "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
+$courier                    : "DejaVu Sans Mono", monospace, sans-serif;
 
 // Now create some variables for the font stacks we want to use on this site.
-$base-font-family           : $lucida; // The font family set on the html element.
-$font-body                  : $lucida;
+$base-font-family           : $courier; // The font family set on the html element.
+$font-body                  : $courier;
 $font-monospace             : $courier;
 
 $colloquy-default-font-size : 16px;
@@ -61,7 +61,7 @@ $grey-text-dark             : #333;
 $blue-text                  : #0033cc;
 
 $bg-incoming                : #efefef;
-$bg-outgoing                : #ffffcc;
+$bg-outgoing                : #fff;
 $bg-highlight               : #d9e7fb;
 $bg-notice                  : #eeffee;
 
